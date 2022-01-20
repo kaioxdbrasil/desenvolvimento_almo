@@ -1,0 +1,147 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-color: #425cc7;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family:'Raleway', sans-serif;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 30px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 30px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 60px;
+  transition: all 0.3s ease;
+  color: #425cc7;
+  font-size: 50px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #F4F4F2;
+  color: 425CC7;
+}
+
+.twitter {
+  background: #F4F4F2;
+  color: #425CC7;
+}
+
+.instagram {
+  background: #F4F4F4;
+  color: #425cc7;
+}
+
+.whatsapp {
+  background: #f4f4f4;
+  color: #425cc7;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.float{
+	position:fixed;
+	width:120px;
+	height:120px;
+	bottom:100px;
+	right:100px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:120px;
+	text-align:center;
+    font-size:80px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:200;
+    left: 30px;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.button {
+  background-color: #425CC7; /* Green */
+  border: none;
+  color: white;
+  padding: 46px 62px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 56px;
+  margin: auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: "Raleway";
+  width: 100%;
+}
+
+.button1 {
+  background-color: #425CC7; 
+  color: white; 
+  border: 10px solid white;
+  border-radius: 20px;
+  font-family: "Raleway";
+}
+
+.button1:hover {
+  background-color: white;
+  color: #425CC7;
+}
