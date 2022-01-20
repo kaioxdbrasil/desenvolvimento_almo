@@ -4,7 +4,7 @@ body, html {
 }
 
 .bgimg {
-  background-image: url('/img/Desktop - 1.png');
+  background-color: #425cc7;
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -37,6 +37,11 @@ body, html {
   font-size: 30px;
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 hr {
   margin: auto;
   width: 40%;
@@ -55,10 +60,10 @@ hr {
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 80px;
+  padding: 60px;
   transition: all 0.3s ease;
   color: #425cc7;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 /* Style the social media icons with color, if you want */
@@ -81,9 +86,9 @@ hr {
   color: #425cc7;
 }
 
-.linkedin {
-  background: #007bb5;
-  color: white;
+.whatsapp {
+  background: #f4f4f4;
+  color: #425cc7;
 }
 
 .youtube {
@@ -93,15 +98,15 @@ hr {
 
 .float{
 	position:fixed;
-	width:160px;
-	height:160px;
-	bottom:140px;
-	right:140px;
+	width:120px;
+	height:120px;
+	bottom:100px;
+	right:100px;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:120px;
 	text-align:center;
-    font-size:120px;
+    font-size:80px;
 	box-shadow: 2px 2px 3px #999;
     z-index:200;
     left: 30px;
@@ -115,15 +120,16 @@ hr {
   background-color: #425CC7; /* Green */
   border: none;
   color: white;
-  padding: 56px 72px;
+  padding: 46px 62px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 56px;
-  margin: 4px 2px;
+  margin: auto;
   transition-duration: 0.4s;
   cursor: pointer;
   font-family: "Raleway";
+  width: 100%;
 }
 
 .button1 {
