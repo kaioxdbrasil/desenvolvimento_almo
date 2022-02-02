@@ -18,16 +18,29 @@
     grid-template-areas: 
         "cabecalho"
         "principal"
-        "rodape";
+        "footer";
 }
 
 .cabecalho {
-    position: absolute;
+    position:static;
     height: 100%;
     top: 0px;
     left: 30px;
+    margin-top: 1%;
+    margin-right: 2%;
+    margin-left: 1%;
 }
 
+.cabecalho2 {
+  float:right;
+  position:static;
+}
+
+.nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
 .principal {
     position: absolute;
@@ -39,6 +52,15 @@
     font-size: 16px;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
 .responsive {
     width: 70%;
     height: auto;
@@ -48,17 +70,12 @@
 
 }
 
-.patternfooter{
-    position: relative;
-    align-items:center; 
-}
-
 .hr {
     margin: auto;
     width: 40%;
 }
 
-.fonte {
+.h1 {
     font-size: 16px;
     font-family: "Raleway";
     color: white;
@@ -66,10 +83,18 @@
     text-align: center;
     text-decoration: none;
     display: block;
-    
-
 }
 
+.h2 {
+  font-size: 12px;
+  font-family: "Raleway";
+  font-weight: lighter;
+  color: white;
+  position:relative; 
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
 
 .button {
     background-color: #425CC7; 
@@ -93,14 +118,32 @@
     border: 3px solid #425CC7;
     border-radius: 10px;
     font-family: "Raleway";
-    
-    
+    font-weight:bold; 
 }
+
   
 .button1:hover {
     background-color: #425CC7;
     color: white;
 }
+
+.button2 {
+  background-color: white; 
+  color: #425CC7; 
+  border: 3px solid #425CC7;
+  border-radius: 10px;
+  font-family: "Raleway";
+  font-weight:bold; 
+  width: 100%;  
+  margin-top: 6%; 
+}
+
+.button2:hover {
+  background-color: #425CC7;
+  color: white;
+}
+
+
 
 body {margin:0;height:2000px;}
 
@@ -152,4 +195,16 @@ body {margin:0;height:2000px;}
 .content {
   margin-left: 75px;
   font-size: 30px;
+}
+
+.conteudo {
+  font-size: 2.5rem;
+}
+
+.conteudo > .titulo {
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #999;
+  margin-bottom: 20px;
 }
