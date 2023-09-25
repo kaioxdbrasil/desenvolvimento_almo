@@ -15,15 +15,23 @@ body {
 header {
     background-color: #425CC7;
     color: #fff;
-    padding: 8px;
+    padding: 4px 16%; /* Espaçamento interno nas laterais (4px) e nas partes superior e inferior (20px) */
 }
 
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 40px; /* Adicione margens externas apenas ao conteúdo dentro do header */
-    max-width: calc(100% - 40px); /* Reduza a largura máxima de acordo com as margens */
+    margin: 0 80px; /* Aumente as margens laterais para afastar dos lados */
+    max-width: calc(100% - 160px); /* Reduza a largura máxima de acordo com as margens laterais */
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .header-container {
+        margin: 0; /* Redefina as margens laterais para zero em dispositivos móveis */
+        max-width: 100%; /* Mantenha a largura máxima em 100% em dispositivos móveis */
+    }
 }
 
 .logo img {
@@ -224,24 +232,40 @@ main {
 
 /* Estilos para a seção com background image */
 .image-section {
-    background-image: url('background.jpg'); /* Caminho para a imagem de fundo */
-    background-size: cover; /* Cobrir toda a área da seção com a imagem */
-    color: #fff; /* Cor do texto na seção (contraste com a imagem) */
-    padding: 40px; /* Espaçamento interno da seção */
-    text-align: center; /* Alinhamento do texto */
+    background-image: url('background.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .image-section {
+        padding: 20px; /* Reduza o espaçamento interno para telas menores */
+    }
 }
 
 /* Estilos para os cartões */
 .card {
-    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo do cartão (com transparência) */
-    color: #333; /* Cor do texto no cartão */
-    border-radius: 8px; /* Borda arredondada */
-    padding: 20px; /* Espaçamento interno do cartão */
-    margin: 20px; /* Espaçamento entre os cartões */
-    display: inline-block; /* Alinhamento dos cartões em linha */
-    width: calc(25% - 40px); /* Largura dos cartões com margens */
-    position: relative; /* Permite posicionar o ícone */
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: calc(25% - 40px);
+    position: relative;
 }
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%; /* Faça com que os cartões ocupem a largura total da tela */
+        margin: 10px 0; /* Reduza o espaçamento entre os cartões */
+    }
+}
+
 
 /* Estilos para os ícones */
 .card i {
@@ -320,13 +344,30 @@ main {
 
 /* Estilos para a seção padrão */
 .standard-section {
-    background-image: url('background.jpg'); /* Caminho para a imagem de fundo */
+    background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff; /* Cor do texto na seção (contraste com a imagem) */
+    color: #fff;
     text-align: center;
     padding: 80px 0;
 }
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .standard-section {
+        padding: 40px 0; /* Reduza o espaçamento interno para telas menores */
+    }
+
+    .standard-section h2 {
+        font-size: 28px; /* Reduza o tamanho da fonte do título para telas menores */
+    }
+
+    .standard-section p {
+        font-size: 16px;
+        margin-bottom: 20px; /* Reduza o espaçamento inferior para telas menores */
+    }
+}
+
 
 /* Estilos para o conteúdo dentro da seção */
 .section-content {
